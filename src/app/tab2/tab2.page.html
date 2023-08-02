@@ -1,0 +1,68 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Tab 2 </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- <div class="flex-center"> -->
+  <ion-spinner name="lines-sharp" color="success"></ion-spinner>
+  <ion-item>
+    <ion-label color="success">Completed</ion-label>
+    <ion-badge color="success">100</ion-badge>
+  </ion-item>
+  <ion-button id="present-alert">Click Me</ion-button>
+  <ion-alert
+    trigger="present-alert"
+    header="Alert"
+    subHeader="Important message"
+    message="This is an alert!"
+    [buttons]="alertButtons"
+  ></ion-alert>
+
+  <!-- <ion-spinner name="crescent" color="success"></ion-spinner> -->
+  <div class="wrapper">
+    <b>Click on a shape to see the ripple</b>
+    <div class="ion-activatable ripple-parent rectangle">
+      <ion-ripple-effect></ion-ripple-effect>
+    </div>
+  </div>
+  <ion-text color="primary">
+    <h1>H1: The quick brown fox jumps over the lazy dog</h1>
+  </ion-text>
+
+  <ion-text color="secondary">
+    <h2>H2: The quick brown fox jumps over the lazy dog</h2>
+  </ion-text>
+
+  <ion-text color="tertiary">
+    <h3>H3: The quick brown fox jumps over the lazy dog</h3>
+  </ion-text>
+
+  <p>
+    <ion-text color="warning"><ion-icon name="warning"></ion-icon></ion-text>
+    I saw a werewolf with a Chinese menu in his hand. Walking through the
+    <ion-text color="success"><sub>streets</sub></ion-text> of Soho in the rain.
+    He <ion-text color="medium"><i>was</i></ion-text> looking for a place called
+    Lee Ho Fook's. Gonna get a
+    <ion-text color="danger">big dish of beef chow mein.</ion-text>
+  </p>
+  <!-- </div> -->
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Inline Toast</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-button id="open-toast" expand="block">Open</ion-button>
+    <p id="message">
+      This toast example uses triggers to automatically open a toast when the
+      button is clicked.
+    </p>
+    <ion-toast
+      trigger="open-toast"
+      message="This toast will disappear after 5 seconds"
+      [duration]="5000"
+    ></ion-toast>
+  </ion-content>
+</ion-content>
